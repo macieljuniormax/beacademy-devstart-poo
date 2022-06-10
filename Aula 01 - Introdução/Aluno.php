@@ -2,6 +2,6 @@
 declare(strict_types = 1);
 
 class Aluno {
-  public $nome;
+  public string $nome;
   public $cpf;
 }
