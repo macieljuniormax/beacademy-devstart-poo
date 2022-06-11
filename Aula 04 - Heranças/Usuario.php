@@ -2,13 +2,15 @@
 
 class Usuario
 {
+  private string $nome;
+  private string $email;
   private string $senha;
   private readonly string $cpf;
 
-  public function __construct(
-    private string $nome,
-    private string $email
-  ) {
+  public function __construct(string $email, string $senha)
+  {
+    $this->email = $email;
+    $this->senha = $senha;
   }
 
   public function getNome(): string
