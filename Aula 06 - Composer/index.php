@@ -1,8 +1,11 @@
 <?php
 
-include 'Classes/Usuario.php';
-include 'Classes/Cliente.php';
-include 'Classes/Gestor.php';
-include 'Classes/Categoria.php';
-include 'Classes/Produto.php';
-include 'Classes/Config/Usuario.php';
+use Classes\Categoria;
+use Classes\Config\Usuario as ConfigUsuario;
+use Classes\Usuario;
+
+include 'vendor/autoload.php';
+
+$us1 = new Usuario();
+$us2 = new ConfigUsuario();
+$ct = new Categoria();
