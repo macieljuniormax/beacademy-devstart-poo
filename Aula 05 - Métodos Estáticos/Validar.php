@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class Validar
+abstract class Validar
 {
   public static function validarCpf(string $cpf)
   {
