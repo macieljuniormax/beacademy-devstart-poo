@@ -7,25 +7,23 @@ class Gestor extends Usuario
   private float $salario;
   private string $horario;
 
-  public function getSalario()
+  public function getSalario(): float
   {
     return $this->salario;
   }
 
-  public function setSalario($salario)
+  public function setSalario($salario): void
   {
     $this->salario = $salario;
-    return $this;
   }
 
-  public function getHorario()
+  public function getHorario(): string
   {
     return $this->horario;
   }
 
-  public function setHorario($horario)
+  public function setHorario($horario): void
   {
     $this->horario = $horario;
-    return $this;
   }
 }
